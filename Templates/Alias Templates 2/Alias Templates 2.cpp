@@ -3,10 +3,16 @@
 
 #include "stdafx.h"
 #include <iostream>
+#include <vector>
+
 template<typename T> struct B                   
 {
 	using type = T; // створення аліаса на шаблонний тип шаблона B
 	type i;
+	// створення через typedef
+	typedef typename std::vector<type>::const_iterator iter_t;
+	const_iterator iter_t it;
+
 };
 template<typename B> typename B::type g(const B& c) 
 {
@@ -25,6 +31,8 @@ int main() {
 	std::cout << p.i << '\n';
     return 0;
 }
+
+
 
 
 
