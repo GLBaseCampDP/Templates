@@ -17,6 +17,8 @@ template<int ... Args> struct Array
 	//Статичний мас розмірністю рівною кількості аргументів
 	static int m[sizeof...(Args)];
 	static int m1[sizeof...(Args)];
+	
+	
 	//Розмірність масиву 
 	enum { count = sizeof ... (Args) };
 };

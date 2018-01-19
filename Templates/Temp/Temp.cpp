@@ -3,6 +3,7 @@
 
 #include "stdafx.h"
 #include <iostream>  
+#include <vector>  
 
 using namespace std;
 // ШФ, яка розгорта список параметрів
@@ -14,7 +15,8 @@ template<typename ... T> int Sum(T... nums)
 	int s = 0;
 	ignore(s += nums ...);
 	return s;
-}
+};
+
 
 // ШФ, яка приймає список параметрів
 template<typename Type, typename ... T> Type Sum1(T... nums)
@@ -22,27 +24,79 @@ template<typename Type, typename ... T> Type Sum1(T... nums)
 	Type s = 0;
 	ignore(s += nums ...);
 	return s;
+};
+
+template<typename T > T Adder(T v) {
+	return v;
+}
+// ШФ, яка приймає список параметрів
+template<typename T, typename... Args> T Adder(T first, Args... args) {
+	return first + Adder(args...);
 }
 
-// ШФ, яка приймає список параметрів
-template<int...cnt> int Sum2((&...arr)[cnt])
+
+//template<typename T = int> T Adder2(T v) {
+//	return v;
+//}
+// ШФ, яка приймає список параметрів з дефолтом
+//template<typename T = int, typename... Args = int> T Adder2(T first, Args... args) {
+//	return first + Adder2(args...);
+//}
+
+/*// ШФ, яка приймає список параметрів
+template<int...cnt> int Sum3(const_cast<const int*>(&cnt)... )
 {
 	int s = 0;
 	ignore(s += cnt ...);
 	return s;
+};*/
+
+
+template <template <typename, typename...> class ContainerType,
+	typename ValueType, typename... Args>
+	ValueType Sum2(const ContainerType<ValueType, Args...>& c) {
+	ValueType s = (ValueType)0;
+	for (const auto& v : c) {
+		s+=v;
+	}
+	return s;
 }
 
-// перевірка чи усі аргументи додатні
+template < typename... Types, template <typename...> class T  >
+	void bar(const T<Types...>&)
+{
+		unsigned cnt = sizeof...(Types);
+	
+		std::cout << sizeof...(Types) << std::endl;
+	
+	};
+
+// перевірка чи   усі аргументи додатні
 template<typename ... T> bool is_Pos(T... nums)
 {
 	bool is_pos = true;
 	ignore(is_pos = is_pos && nums >= 0 ...);
 	return is_pos;
-}
+};
+
+template <typename Type, typename... Types>
+struct V {
+
+
+	V(Type t, Types... nums) { }
+	void add(typename ... Types) { a.push_back(Types...nums); }
+	//	void operator()(Types... nums) { a.push_back(nums); }
+	std::vector<Type> a;
+};
 
 int main()
 {
-	std::cout << Sum(1, 2, 3) << "  " << Sum1<double>(1.1, 2.2, 3.3);
+	std::cout << Sum(1, 2, 3) << "  " << Sum1<double>(1.1, 2.2, 3.3) << "  " << 
+		Sum2(std::vector<int> { 1, 2, 3 }) << "  " << Adder<double>(1.1, 2.2, 3.3) <<
+		"  " ;
+	V<int> v(1, 2, 3, 4); //v.add(1, 2,3,4);
+	std::vector<int> a = { 5, 6, 7 };
+	
 
 	system("pause");
 	return 0;
