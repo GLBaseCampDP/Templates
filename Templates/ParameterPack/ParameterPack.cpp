@@ -4,49 +4,42 @@
 #include "stdafx.h"
 
 #include <iostream>  
+void print() { std::cout << "_"<< std::endl; } //1
 
-using namespace std;
+template <typename T> void print(const T& i) //2
+{	std::cout << i << std::endl; }
 
-void print() { //1
-	cout << endl;
+template <typename T, typename... Types> //3
+void print(const T& i, const Types&... arg) {
+	std::cout << i << "! ";
+	// рекурсія для розгортання набору аргументів
+	print(arg...);
 }
 
-template <typename T> void print(const T& t) { //2
-	cout << t << endl;
-}
-
-template <typename T, typename... Args> void print(const T& first, const Args&... rest) {//3
-	cout << first << ", ";
-	print(rest...); // рекурсивний виклик для розгортання набору аргументів
-}
-template <typename T, typename... Args> struct A{
-
-	void print1(const T& first, const Args&... rest) {//4
-	cout << first << ", ";
-	print(rest...); // рекурсивний виклик для розгортання набору аргументів
+template <typename T, typename... Types>
+struct A {
+	void print1(const T& i, const Types&... arg) {//4
+		std::cout << i << ", ";
+		print(arg...);// calls - 3
 	}
-	void print2(T* first, Args&&... rest) {}
-	void print3(T&& first, Args*... rest) {}
+	void print2(T i, Types... arg) {
+		std::cout << i << ", ";
+		print(arg...);// calls - 3
+	}
+	void print3(T* i, Types... arg) {}
+	void print4(T&& i, Types*... arg) {}
 };
-
-
-int main()
-{
+int main() {
 	print(); // call - 1
 	print(1); // calls - 2
-
-			  // calls - 3
-	print(10, 20);
-	print(100, 200, 300);
+	print(10, 20); // calls - 3
+	print(100, 200, 300); // calls - 3
 	print("first", 2, "third", 3.14159);
-	A<char*, int> a0;
-	A<char*, int, char*, double> a1; 
-	 a1.print1("first", 2, "third", 3.14159);// calls - 4
-	 system("pause");
+	A<char*, int, char*, double> a1;
+	// calls - 4
+	a1.print1("first", 2, "third", 3.14159);
+	A<char*, int, short, double> a2;
+	a2.print2((char*)"***", 2, 10, 3.14159);
+	system("pause");
 	return 0;
 }
-
-
-
-
-
