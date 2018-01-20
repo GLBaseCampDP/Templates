@@ -8,41 +8,8 @@
 
 using namespace std;
 // ШФ, яка розгорта список параметрів
-template<typename ... T> void ignore(T...) { } // маркер розширення
+template<typename ... T> void Adder(T...) { } // маркер розширення
 
-// ШФ, яка приймає список параметрів
-template<typename ... T> int Sum(T... nums)
-{
-	int s = 0;
-	ignore(s += nums ...);
-	return s;
-};
-
-
-// ШФ, яка приймає список параметрів
-template<typename Type, typename ... T> Type Sum1(T... nums)
-{
-	Type s = 0;
-	ignore(s += nums ...);
-	return s;
-};
-
-template<typename T > T Adder(T v) {
-	return v;
-}
-// ШФ, яка приймає список параметрів
-template<typename T, typename... Args> T Adder(T first, Args... args) {
-	return first + Adder(args...);
-}
-
-
-//template<typename T = int> T Adder2(T v) {
-//	return v;
-//}
-// ШФ, яка приймає список параметрів з дефолтом
-//template<typename T = int, typename... Args = int> T Adder2(T first, Args... args) {
-//	return first + Adder2(args...);
-//}
 
 /*// ШФ, яка приймає список параметрів
 template<int...cnt> int Sum3(const_cast<const int*>(&cnt)... )
@@ -98,11 +65,10 @@ struct V {
 
 int main()
 {
-	std::cout << Sum(1, 2, 3) << "  " << Sum1<double>(1.1, 2.2, 3.3) << "  " <<
-		Sum2(std::vector<int> { 1, 2, 3 }) << "  " << Adder<double>(1.1, 2.2, 3.3) <<
-		"  ";
-	V<int> v(1, 2, 3, 4); //v.add(1, 2,3,4);
-	std::vector<int> a = { 5, 6, 7 };
+	std::cout << Sum2(std::vector<int> { 1, 2, 3 });
+		
+	//V<int> v(1, 2, 3, 4); //v.add(1, 2,3,4);
+	//std::vector<int> a = { 5, 6, 7 };
 
 
 	system("pause");
