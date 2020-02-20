@@ -1,0 +1,3 @@
+/home/dpeleshko/work/C-C++/qt/template/сlass_template_instantiation/build-class_template_instantiation-Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/dpeleshko/work/C-C++/qt/template/сlass_template_instantiation/build-class_template_instantiation-Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/dpeleshko/work/C-C++/qt/template/сlass_template_instantiation/build-class_template_instantiation-Desktop-Debug/CMakeFiles/class_template_instantiation.dir

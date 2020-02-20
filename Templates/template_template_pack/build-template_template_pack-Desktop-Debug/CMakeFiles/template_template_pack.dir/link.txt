@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/template_template_pack.dir/main.cpp.o  -o template_template_pack 

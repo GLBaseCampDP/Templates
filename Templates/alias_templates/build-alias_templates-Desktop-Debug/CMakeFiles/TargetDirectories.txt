@@ -1,0 +1,3 @@
+/home/dpeleshko/work/C-C++/qt/template/alias_templates/build-alias_templates-Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/dpeleshko/work/C-C++/qt/template/alias_templates/build-alias_templates-Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/dpeleshko/work/C-C++/qt/template/alias_templates/build-alias_templates-Desktop-Debug/CMakeFiles/alias_templates.dir

@@ -1,0 +1,3 @@
+/home/dpeleshko/work/C-C++/qt/template/template_pack_expand_by_marker/build-template_pack_expand_by_marker-Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/dpeleshko/work/C-C++/qt/template/template_pack_expand_by_marker/build-template_pack_expand_by_marker-Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/dpeleshko/work/C-C++/qt/template/template_pack_expand_by_marker/build-template_pack_expand_by_marker-Desktop-Debug/CMakeFiles/template_pack_expand_by_marker.dir

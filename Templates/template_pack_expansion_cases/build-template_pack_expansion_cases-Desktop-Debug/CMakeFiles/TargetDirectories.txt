@@ -1,0 +1,3 @@
+/home/dpeleshko/work/C-C++/qt/template/template_pack_expansion_cases/build-template_pack_expansion_cases-Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/dpeleshko/work/C-C++/qt/template/template_pack_expansion_cases/build-template_pack_expansion_cases-Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/dpeleshko/work/C-C++/qt/template/template_pack_expansion_cases/build-template_pack_expansion_cases-Desktop-Debug/CMakeFiles/template_pack_expansion_cases.dir

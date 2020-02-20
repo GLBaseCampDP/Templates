@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dpeleshko/work/C-C++/qt/template/export_in_template_function/export_in_template_function/A.h
+iostream
+-
+
+/home/dpeleshko/work/C-C++/qt/template/export_in_template_function/export_in_template_function/B.hpp
+
+/home/dpeleshko/work/C-C++/qt/template/export_in_template_function/export_in_template_function/main.cpp
+iostream
+-
+A.h
+/home/dpeleshko/work/C-C++/qt/template/export_in_template_function/export_in_template_function/A.h
+B.hpp
+/home/dpeleshko/work/C-C++/qt/template/export_in_template_function/export_in_template_function/B.hpp
+

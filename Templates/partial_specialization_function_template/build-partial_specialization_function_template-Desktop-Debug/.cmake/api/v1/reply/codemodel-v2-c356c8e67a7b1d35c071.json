@@ -1,0 +1,59 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "partial_specialization_function_template",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "partial_specialization_function_template::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-partial_specialization_function_template-Debug-f1cc7f34fa6ef3c83938.json",
+					"name" : "partial_specialization_function_template",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/dpeleshko/work/C-C++/qt/template/partial_specialization_function_template/build-partial_specialization_function_template-Desktop-Debug",
+		"source" : "/home/dpeleshko/work/C-C++/qt/template/partial_specialization_function_template/partial_specialization_function_template"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

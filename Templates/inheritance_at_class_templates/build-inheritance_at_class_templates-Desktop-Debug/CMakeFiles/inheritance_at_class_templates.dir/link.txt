@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/inheritance_at_class_templates.dir/main.cpp.o  -o inheritance_at_class_templates 

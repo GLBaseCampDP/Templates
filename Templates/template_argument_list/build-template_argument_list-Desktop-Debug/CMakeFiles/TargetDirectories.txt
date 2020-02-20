@@ -1,0 +1,3 @@
+/home/dpeleshko/work/C-C++/qt/template/template_argument_list/build-template_argument_list-Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/dpeleshko/work/C-C++/qt/template/template_argument_list/build-template_argument_list-Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/dpeleshko/work/C-C++/qt/template/template_argument_list/build-template_argument_list-Desktop-Debug/CMakeFiles/template_argument_list.dir

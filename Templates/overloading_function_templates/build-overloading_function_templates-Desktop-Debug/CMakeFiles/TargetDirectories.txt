@@ -1,0 +1,3 @@
+/home/dpeleshko/work/C-C++/qt/template/overloading_function_templates/build-overloading_function_templates-Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/dpeleshko/work/C-C++/qt/template/overloading_function_templates/build-overloading_function_templates-Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/dpeleshko/work/C-C++/qt/template/overloading_function_templates/build-overloading_function_templates-Desktop-Debug/CMakeFiles/overloading_function_templates.dir

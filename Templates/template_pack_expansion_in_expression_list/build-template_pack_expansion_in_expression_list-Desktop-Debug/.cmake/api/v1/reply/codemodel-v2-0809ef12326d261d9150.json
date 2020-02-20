@@ -1,0 +1,59 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "template_pack_expansion_in_expression_list",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "template_pack_expansion_in_expression_list::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-template_pack_expansion_in_expression_list-Debug-f6e3ef3eb35782d97253.json",
+					"name" : "template_pack_expansion_in_expression_list",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/dpeleshko/work/C-C++/qt/template/template_pack_expansion_in_expression_list/build-template_pack_expansion_in_expression_list-Desktop-Debug",
+		"source" : "/home/dpeleshko/work/C-C++/qt/template/template_pack_expansion_in_expression_list/template_pack_expansion_in_expression_list"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

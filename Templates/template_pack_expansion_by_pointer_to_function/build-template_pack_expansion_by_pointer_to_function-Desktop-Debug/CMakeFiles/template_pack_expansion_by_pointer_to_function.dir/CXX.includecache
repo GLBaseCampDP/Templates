@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dpeleshko/work/C-C++/qt/template/template_pack_expansion_by_pointer_to_function/template_pack_expansion_by_pointer_to_function/main.cpp
+iostream
+-
+typeinfo
+-
+functional
+-
+

@@ -1,0 +1,59 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "template_pack_expand_by_marker",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "template_pack_expand_by_marker::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-template_pack_expand_by_marker-Debug-554b542193f7d02a88a4.json",
+					"name" : "template_pack_expand_by_marker",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/dpeleshko/work/C-C++/qt/template/template_pack_expand_by_marker/build-template_pack_expand_by_marker-Desktop-Debug",
+		"source" : "/home/dpeleshko/work/C-C++/qt/template/template_pack_expand_by_marker/template_pack_expand_by_marker"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}
