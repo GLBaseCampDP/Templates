@@ -1,3 +1,0 @@
-/home/dpeleshko/work/C-C++/qt/template/partial_specialization_function_template/build-partial_specialization_function_template-Desktop-Debug/CMakeFiles/rebuild_cache.dir
-/home/dpeleshko/work/C-C++/qt/template/partial_specialization_function_template/build-partial_specialization_function_template-Desktop-Debug/CMakeFiles/edit_cache.dir
-/home/dpeleshko/work/C-C++/qt/template/partial_specialization_function_template/build-partial_specialization_function_template-Desktop-Debug/CMakeFiles/partial_specialization_function_template.dir

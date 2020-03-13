@@ -1,3 +1,0 @@
-/home/dpeleshko/work/C-C++/qt/template/full_specialization_of_function_template/build-full_specialization_of_function_template-Desktop-Debug/CMakeFiles/rebuild_cache.dir
-/home/dpeleshko/work/C-C++/qt/template/full_specialization_of_function_template/build-full_specialization_of_function_template-Desktop-Debug/CMakeFiles/edit_cache.dir
-/home/dpeleshko/work/C-C++/qt/template/full_specialization_of_function_template/build-full_specialization_of_function_template-Desktop-Debug/CMakeFiles/full_specialization_of_function_template.dir

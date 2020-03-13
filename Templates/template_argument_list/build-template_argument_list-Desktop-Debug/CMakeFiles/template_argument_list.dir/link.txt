@@ -1,1 +1,0 @@
-/usr/bin/g++  -g   CMakeFiles/template_argument_list.dir/main.cpp.o  -o template_argument_list 

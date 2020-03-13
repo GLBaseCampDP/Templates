@@ -1,1 +1,0 @@
-/usr/bin/g++  -g   CMakeFiles/alias_template_2_.dir/main.cpp.o  -o alias_template_2_ 
